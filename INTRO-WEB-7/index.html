@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplos js para la web (INTRO-WEB-7)</title>
+
+</head>
+<body>
+    <script>
+        function saludar(){
+            console.log("hola mundo, js desde VSCode");
+        }
+        function sumar(v1,v2=10){
+            console.log("esto es una suma")
+            return (v1+v2);
+        }
+    </script>
+    <h1>Mi primer javascript</h1>
+    <script>
+        saludar();
+        
+        </script>
+    <script>
+        console.log("el resultado es: " + sumar(3,20));
+
+    </script>
+
+<script>
+    let nombre = prompt ("Cual es tu nombre?");
+    function llamaNombre (nombre){
+        alert("Hola " + nombre + " bienvenidx");
+    }
+
+</script>
+<script>
+    llamaNombre(nombre);
+</script>
+
+<script src="../INTRO-WEB-7/js/tiposdedatosyvariables.js"></script>
+
+<!--Ejercicio 1-->
+
+<script>
+    function trabajo(horasTrabajadas, sueldoPorHora)
+    alert("El sueldo es " + (horasTrabajadas * sueldoPorHora))
+
+</script>
+
+
+</body>
+</html>
