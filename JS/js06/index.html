@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!--Nodo del tipo documento-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora del DOM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1 id = "h1">Calculadora DOM</h1>
+    <!--Aquí ingreso mis numeros-->
+    <input type="number" id="input1" placeholder="Ingresa tu primer numero">
+    <input type="number" id="input2" placeholder="Ingresa tu segundo numero">
+    
+<br>
+<br>
+
+<!--Aquí creo los botones-->
+
+    <button onmouseover="cambiarColor('blue')" id="botSuma" class="botones">Suma</button>
+    <button id="botResta"class="botones">Resta</button>
+    <button id="botMulti"class="botones">Multiplicacion</button>
+    <button id="botDiv"class="botones">Division</button>
+
+
+<!--Aqui va mi resultado-->
+<p id="resultado">Aquí va el resultado</p>
+
+<!--Aqui va la foto del perrito-->
+
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
