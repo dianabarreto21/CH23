@@ -1,0 +1,18 @@
+package com.generation.dgbr.ManejoExcepciones;
+
+public class NoComprobadasExceptions {
+
+	
+	public static void main(String[] args) {
+		
+		try {
+			int division = 10/0;
+			System.out.println("--->" + division);
+		}catch(Exception e){
+			System.out.println("Capturando la exception " + e.getMessage());
+		}
+		
+		
+	}
+	
+}
