@@ -5,8 +5,8 @@ public class AlumnoB extends PersonaP {
 	private double promedio;
 	
 	//Constructor
-	public AlumnoB(int matricula, double promedio) {
-		
+	public AlumnoB(int matricula, double promedio, String nombre, int edad) {
+		super(nombre, edad);
 		this.matricula = matricula;
 		this.promedio = promedio;
 	}
@@ -32,8 +32,12 @@ public class AlumnoB extends PersonaP {
 	public String toString() {
 		return "AlumnoB [matricula=" + matricula + ", promedio=" + promedio + "]";
 	}
-	
-	
-	
+	//polimorfismo (utilizando 2 metodos con el mismo nombre)
+	public void mostrarDatos() {
+		System.out.println(this.getNombre() + " " + this.getEdad() + " " + this.matricula + " " + this.promedio);
+	}                     //Sobrecargando el mismo metodo
+	public void mostrarDatos(String apellido) {
+		System.out.println(this.getNombre() + " " + apellido + " " + this.getEdad() + " " + this.matricula + " " + this.promedio);
+	}
 	
 }
